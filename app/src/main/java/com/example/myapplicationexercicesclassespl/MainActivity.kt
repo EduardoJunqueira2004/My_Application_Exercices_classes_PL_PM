@@ -20,8 +20,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         Log.d("****TAG ", "OnCreate")
-        Toast.makeText(this, "oncreate", Toast.LENGTH_LONG).show()
-        Toast.makeText(this, R.string.app_name, Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "oncreate", Toast.LENGTH_LONG).show()//show the toast  message on the screen On create method
+        //Toast.makeText(this, R.string.app_name, Toast.LENGTH_LONG).show()//show the toast  message on the screen the string with key app_name method
+        //Toast.makeText(this, R.string.textoinicial, Toast.LENGTH_LONG).show()//show the toast  message on the screen the string with key textoinicial method
+        Toast.makeText(this, R.string.textopergunta, Toast.LENGTH_LONG).show()//show the toast  message on the screen the string with key textopergunta method
     }
         //Atencion this words are case sensitive
         override fun onPause() {
