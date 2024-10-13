@@ -1,19 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<!-- This is the default ConstraintLayout for the MainActivity
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hello World! This is just a test to see how it works!"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
+  </androidx.constraintlayout.widget.ConstraintLayout>
+-->
+
+<!-- This is the Linear Layout Exercice for the MainActivity -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Hello World! This is just a test to see how it works!"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escreva aqui o seu contacto"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escreva aqui o seu email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escreva aqui o seu ID do IPVC "/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"/>
+</LinearLayout>
+<!-- This is the Linear Layout Exercice for the MainActivity - END -->
